@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://almahata.ae/sitemap.xml
+
+# Al Mahata Al Wahedah Garage Sharjah - Premium Car Repair Services
+# Sharjah, UAM
