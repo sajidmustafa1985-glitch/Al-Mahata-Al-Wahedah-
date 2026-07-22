@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppButton() {
-  const greeting = "Assalamu Alaikum / Shalom / Namaste / Peace be upon you! 🙏 Welcome to Al Mahata Al Wahedah Auto Maintenance. How may I help you today?";
+  const greeting = "🙏 Welcome to Al Mahata Al Wahedah Auto Maintenance. How may I help you today?";
 
   return (
     <motion.a
