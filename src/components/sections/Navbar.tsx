@@ -134,7 +134,7 @@ export default function Navbar() {
                     : 'text-white'
                 }`}
               >
-                AL MAHATA AL WAHIDA
+                AL MAHATA AL WAHEDAH
               </span>
 
               {/* Company Type */}
