@@ -3,7 +3,7 @@
 // Centralized data for sitemap, metadata, and structured data
 // =============================================================
 
-export const SITE_URL = 'https://almahata.ae';
+export const SITE_URL = 'https://www.almahataalwahedahautomaintllc.com';
 export const SITE_NAME = 'Al Mahata Al Wahedah';
 export const BUSINESS_NAME = 'Al Mahata Al Wahedah Auto Maintenance L.L.C';
 export const BUSINESS_NAME_AR = 'المحطة الوحيدة للصيانة';
