@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as SonnerToaster } from "@/components/ui/sonner";
+import FaqJsonLd from '@/components/seo/FaqJsonLd';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -69,10 +70,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>",
-    apple: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>",
-  },
+
   openGraph: {
     type: "website",
     locale: "en_AE",
@@ -82,21 +80,12 @@ export const metadata: Metadata = {
     title: "Al Mahata Al Wahedah Sharjah | Premium Car Repair, Body Work & 24/7 Recovery",
     description:
       "Sharjah's #1 full-service car garage. Engine, mechanical, electrical, body work, oil change, brakes, battery, transmission, painting & 24/7 towing. GCC, US, German & Asian vehicle specialists. Free first inspection!",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Al Mahata Al Wahedah Garage Sharjah — Premium Car Repair Services",
       },
-    ],
-  },
   twitter: {
     card: "summary_large_image",
     title: "Al Mahata Al Wahedah Sharjah | Premium Car Repair & 24/7 Recovery",
     description:
       "Sharjah's trusted full-service car garage. 11 services including engine repair, body work, painting & 24/7 towing recovery. All car brands. Free first inspection!",
-    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "https://almahata.ae",
@@ -106,7 +95,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "google4b1fe4631c319ca0",
   },
 };
 
@@ -218,6 +207,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <FaqJsonLd />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
